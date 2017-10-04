@@ -66,6 +66,12 @@ app.get('/bad', (req, res)=>{
     });
 });
 
+app.get('/projects', (req, res)=>{
+    res.render('projects', {
+        projectsMessage:'Portafolio page'
+    });
+})
+
 //make the server listen and defien the port 
 app.listen(port, ()=>{
     console.log(`The server is up on port ${port}`);
